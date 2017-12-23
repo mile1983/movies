@@ -15,6 +15,11 @@ class CreateMowieTable extends Migration
     {
         Schema::create('mowie', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('title');
+            $table->text('genre');
+            $table->text('director');
+            $table->integer('Year');
+            $table->text('storyline');
             $table->timestamps();
         });
     }
